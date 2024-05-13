@@ -34,7 +34,7 @@
     margin-right: 4rem;
 }
 
-.n-list>ul>li:hover{
+.n-list>ul>a>li:hover{
     color: var(--orange);
     cursor: pointer;
 }
@@ -42,3 +42,13 @@
 /* .n-button{
     flex: 2;
 } */
+
+@media screen and (max-width: 480px) {
+    .n-list {
+      display: none;
+    }
+
+    .n-button {
+      display: none;
+    }
+  }
