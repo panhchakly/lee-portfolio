@@ -13,7 +13,6 @@ function VerifyCode() {
           <input type="password" placeholder="password" />
           <input type="password" placeholder="confirm password" />
           <button>Submit</button>
-          <p>This is an error</p>
         </form>
       </div>
     </>

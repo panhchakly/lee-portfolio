@@ -12,7 +12,6 @@ function ForgotPassword() {
           </div>
           <input type="email" placeholder="email" />
           <button>Submit</button>
-          <p>This is an error</p>
           <span><Link to="/admin/login">Oh!... I remember my password. Login</Link></span>
         </form>
       </div>

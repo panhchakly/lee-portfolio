@@ -15,7 +15,6 @@ function Login() {
           {/* forget password */}
           <span><Link to="/admin/forgot-password">Forgot password?</Link></span>
           <button>Login</button>
-          <p>This is an error</p>
           {/* register */}
           <span><Link to="/admin/register">Don't have an account? Register</Link></span>
         </form>
