@@ -10,7 +10,7 @@ import thumbup from '../../img/thumbup.png';
 import Crown from '../../img/crown.png';
 import glassesimoji from '../../img/glassesimoji.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
-import { themeContext } from '../../Context';
+import { themeContext } from '../../../Context';
 import { motion } from 'framer-motion'; // yarn add framer-motion@6.2.8
 
 function Intro() {

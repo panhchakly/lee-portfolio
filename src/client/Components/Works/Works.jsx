@@ -5,7 +5,7 @@ import Fiverr from '../../img/fiverr.png';
 import Amazon from '../../img/amazon.png';
 import Shopify from '../../img/Shopify.png';
 import Facebook from '../../img/Facebook.png';
-import { themeContext } from '../../Context';
+import { themeContext } from '../../../Context';
 import { motion } from 'framer-motion'; // yarn add framer-motion@6.2.8
 
 function Works() {

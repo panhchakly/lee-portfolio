@@ -6,7 +6,7 @@ import Ecommerce from '../../img/ecommerce.png';
 import HOC from '../../img/hoc.png';
 import Musicapp from '../../img/musicapp.png';
 import 'swiper/css';
-import { themeContext } from '../../Context';
+import { themeContext } from '../../../Context';
 
 function Portfolio() {
     const theme = useContext(themeContext);

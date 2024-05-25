@@ -1,7 +1,7 @@
 import React, {useRef, useState, useContext} from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
-import { themeContext } from '../../Context';
+import { themeContext } from '../../../Context';
 
 function Contact() {
     const theme = useContext(themeContext);

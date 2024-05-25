@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
-import { themeContext } from "../../Context";
+import { themeContext } from "../../../Context";
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
 
@@ -20,7 +20,7 @@ const Services = () => {
   };
 
   return (
-    <div className="services" id="services">
+    <div className="services" id="Services">
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
