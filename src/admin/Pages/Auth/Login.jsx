@@ -25,6 +25,8 @@ function Login() {
       getIP = await getIP.json();
       const dataResponse = await fetch(SummaryApi.login.url, {
           method: SummaryApi.login.method,
+          credentials: 'include',
+          Cookies: 'include',
           headers: {
               "Content-Type": "application/json",
               "device": "web",
