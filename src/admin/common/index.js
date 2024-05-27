@@ -7,6 +7,14 @@ const SummaryApi = {
     login : {
         url: `${backendDomain}/api/v1/auth/login`,
         method: "post"
+    },
+    forgotPassword : {
+        url: `${backendDomain}/api/v1/auth/forget-password`,
+        method: "post"
+    },
+    verifyCode : {
+        url: `${backendDomain}/api/v1/auth/verify-code`,
+        method: "post"
     }
 }
 

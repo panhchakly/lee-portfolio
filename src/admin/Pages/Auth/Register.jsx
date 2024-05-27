@@ -30,27 +30,30 @@ function Register() {
   const navigate = useNavigate();
   const handleOnSubmit = async(e) => {
       e.preventDefault();
-      console.log(data);
 
-      if(data.password === data.confirmPassword) {
-          const dataResponse = await fetch(SummaryApi.signUp.url, {
-              method: SummaryApi.signUp.method,
-              headers: {
-                  "Content-Type": "application/json"
-              },
-              body: JSON.stringify(data)
-          });
-
-          const response = await dataResponse.json();
-          if(response.name) {
-            toast.error(response.message);
-          }else{
-            toast.success(response.message);
-            navigate('/admin/login');
-          }
-      }else{
-          toast.error("password not match");
+      if(data.password !== data.confirmPassword) {
+        toast.error("password not match");
+        return;
       }
+
+      const dataResponse = await fetch(SummaryApi.signUp.url, {
+        method: SummaryApi.signUp.method,
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+    const response = await dataResponse.json();
+    if(response.name || response.success === false) {
+      toast.error(response.message);
+    }else{
+      toast.success(response.message);
+      // delay for 2 seconds
+      setTimeout(() => {
+        navigate('/admin/login');
+      }, 2000);
+    }
   }
   return (
     <>
