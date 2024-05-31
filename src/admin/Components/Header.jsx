@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SummaryApi from "../common";
 import { useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 import ProfileIcon from '../images/profile.jpg';
 import NotificationIcon from '../images/notification.png';
 import MasterPages from './MasterPages';
@@ -36,6 +37,8 @@ function Header() {
         }else{
           // toast.success(response.message);
           // console.log(response);
+          Cookies.set('token', response.data.token);
+          Cookies.set('user', response.data.user);
           setData({
             username: response.data.user.username,
             email: response.data.user.email,

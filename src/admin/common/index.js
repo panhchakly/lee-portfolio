@@ -1,5 +1,6 @@
 const backendDomain = "http://localhost:5000";
 const SummaryApi = {
+    // Auth
     signUp : {
         url: `${backendDomain}/api/v1/auth/register`,
         method: "post"
@@ -23,7 +24,13 @@ const SummaryApi = {
     logout : {
         url: `${backendDomain}/api/v1/auth/logout`,
         method: "post"
-    }
+    },
+
+    // User
+    list_users : {
+        url: `${backendDomain}/api/v1/user`,
+        method: "get"
+    },
 }
 
 export default SummaryApi
