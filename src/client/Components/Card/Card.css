@@ -1,6 +1,6 @@
 .card{
     width: 10rem;
-    height: 14rem;
+    height: inherit;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     border: 7px solid var(--orangeCard);
     box-shadow: var(--boxShadow);
     border-radius: 20px;
-    padding: 0px 26px 0px 26px;
+    padding: 10px 26px 10px 26px;
 }
 
 .card span:nth-of-type(2){
