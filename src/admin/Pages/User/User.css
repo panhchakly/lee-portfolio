@@ -1,0 +1,51 @@
+
+.table_user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.table_user > h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.table_user > table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table, thead, th {
+    border: 1px solid black;
+    background-color: var(--orange);
+}
+
+table, tbody, td {
+    border: 1px solid black;
+    background-color: var(--blueCard);
+}
+
+table, tbody, input, select {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+}
+
+.delete_icon{
+    color: rgb(194, 40, 40);
+    cursor: pointer;
+}
+
+.edit_icon{
+    color: rgb(41, 41, 221);
+    cursor: pointer;
+}
+
+.save_icon {
+    color: green;
+    cursor: pointer;
+}

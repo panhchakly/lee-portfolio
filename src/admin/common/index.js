@@ -27,9 +27,17 @@ const SummaryApi = {
     },
 
     // User
-    list_users : {
+    userlist : {
         url: `${backendDomain}/api/v1/user`,
         method: "get"
+    },
+    deleteUser : {
+        url: `${backendDomain}/api/v1/user`,
+        method: "delete"
+    },
+    updateUser : {
+        url: `${backendDomain}/api/v1/user`,
+        method: "put"
     },
 }
 
